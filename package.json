@@ -1,16 +1,24 @@
 {
-    "name": "@tim/dbus-helper",
-    "version": "0.1.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "tsc",
-        "prepare": "npm run build"
-    },
-    "devDependencies": {
-        "typescript": "^5.9.2"
-    }
+	"name": "@tim/dbus-helper",
+	"version": "0.1.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"test": "vitest",
+		"prepare": "npm run build"
+	},
+	"devDependencies": {
+		"@types/node": "^24.3.0",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
+	},
+	"dependencies": {
+		"dbus-next": "^0.10.2"
+	}
 }
